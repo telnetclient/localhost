@@ -1,0 +1,2 @@
+Sample file created for folder creation.
+GitHub doesn't let us to create empty folders 
