@@ -34,7 +34,7 @@ class FTPServer {
                 if (fileName.equalsIgnoreCase("exit")) 
                     System.exit(0);
                 long fileSize = dataInputStream.readLong();
-                System.out.printf("\nReceiving file: %s (Size: %d bytes).\n",fileName,fileSize);
+                System.out.printf("\nReceiving file: %s (Size: %d bytes).\n\n",fileName,fileSize);
                 try (FileOutputStream fileOutputStream = new FileOutputStream("received_" + fileName)) {
                     byte[] buffer = new byte[4096];
                     int bytesRead;
@@ -44,7 +44,7 @@ class FTPServer {
                     }
                     System.out.println();
                 }
-                System.out.println("File Received Successfully.");
+                System.out.println("\nFile Received Successfully.");
             }
             catch (Exception e) { e.printStackTrace(); }               
         }
