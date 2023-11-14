@@ -6,7 +6,7 @@ class FTPClient {
         String serverAddress = "localhost";
         int serverPort = 53979;
         String filePath;
-        System.out.println("Welcome to my FTP File Transferer. Type CTRL+C to terminate.");
+        System.out.println("Welcome to my FTP File Transferer. Type exit to terminate.");
         BufferedReader bfr = new BufferedReader(new InputStreamReader(System.in));
         do {
             try (
